@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Lato', sans-serif;
+  color: #6D3939;
+  line-height: 1.5em;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/* nav */
+nav {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: -140px;
+  width: 160px;
+  height: 50%;
+  max-height: 500px;
+  background: rgb(255, 255, 255, 0.3);
+  border-right: 20px solid #6C718A;
+  text-align: center;
+}
+nav:hover {
+  left: 0;
+}
+ul {
+  list-style: none;
+}
+nav ul {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav a {
+  display: table;
+  height: 25%;
+  width: 100%;
+}
+nav a:hover {
+  background: white;
+  font-size: 120%;
+  font-weight: bold;
+}
+nav li {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* header */
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  height: 100vh;
+}
+header h1 {
+  font-size: 1.3em;
+  line-height: 2em;
+  border-radius: 20px;
+  width: 60%;
+  background: rgb(255, 255, 255, 0.3);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 50%;
+}
+/* Section common styles */
+section {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+}
+section h2 {
+  border-bottom: 1px solid #E5EDF1;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+}
+/* Skills */
+.skills img {
+  width: 25px;
+}
+.skills li {
+  display: inline-block;
+  width: 32%;
+  line-height: 2em;
+  font-size: 110%;
+}
+.skills li:hover {
+  background: #CAD1DB;
+  border-radius: 50%;
+}
+/* Projects */
+.projects h2 {
+  background: rgb(255, 255, 255, 0.3);
+}
+.item {
+  width: 288px;
+  margin: 0 auto;
+}
+.item h3 {
+  margin: 2em auto 1em auto;
+}
+.item a p {
+  text-align: center;
+}
+.item a:hover > img {
+  border: 4px solid #6EC39E;
+}
+.item a:hover {
+  font-size: 110%;
+  font-weight: bold;
+}
+.item p {
+  text-align: left;
+  padding: 0.5em 0;
+  width: 288px;
+  margin: 0 auto;
+}
+/* Cv */
+button::-moz-focus-inner {
+  border:0;
+}
+.cv button {
+  width: 100%;
+  height: 50px;
+  background: white;
+  border: none;
+  color: inherit;
+  font-size: 1.3em;
+}
+.content {
+  display: none;
+}
+.tab:focus {
+  border: 3px solid #CAD1DB;
+}
+.tab:focus + .content {
+  display: block;
+}
+
+.cv h3 {
+  margin-bottom: 10px;
+}
+.cv p {
+  text-align: left;
+  padding: 1em;
+  
+}
+/* contact */
+fieldset {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+textarea {
+  width: 90%;
+}
+input[type="submit"] {
+  width: 100px;
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+  /* nav */
+  nav {
+    display: block;
+  }
+  .wrapper {
+    width: 60%;
+  }
+  .projects .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: auto;
+    margin: 10px;
+  }
+  header h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  nav {
+    left: -220px;
+    width: 240px;
+  }
+}
