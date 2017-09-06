@@ -23,7 +23,8 @@
 
     <link href="/assets/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -33,7 +34,7 @@
           <a href="#header"><li>Home</li></a>
           <a href="#projects"><li>Projects</li></a>
           <a href="#cv"><li>Cv</li></a>
-          <a href="#"><li>Contacts</li></a>
+          <a href="#contact"><li>Contacts</li></a>
         </ul>
       </nav>
     <!-- Header -->
@@ -44,35 +45,7 @@
           </h1>
         </div>
       </header>
-
-      <!-- About me -->
-      <!-- <section class="about" id="about">
-        <div class="wrapper">
-          <h2>About Me</h2>
-          <p>I am a Junior web developer with skills in Ruby, Rails and Front-end technologies.
-              I recently joined the community attracted by the opportunity to contribute in 
-              solving real problems which affect people at a global scale and also to purse a 
-              career in something I love. Before that, I worked as an assistant manager in a 
-              startup trading company in Shanghai and 5 years in hospitality in Melbourne.
-          </p>
-        </div>
-      </section> -->
-
-      <!-- My Skills -->
-      <!-- <section class="skills">
-        <div class="wrapper">
-          <h2><i class="devicon-devicon-plain"></i> Skills</h2>
-          <ul>
-            <li><i class="devicon-html5-plain"></i> Html5</li>
-            <li><i class="devicon-css3-plain"></i> Css3</li>
-            <li><i class="devicon-javascript-plain"></i> Js</li>
-            <li><i class="devicon-ruby-plain"></i> Ruby</li>
-            <li><i class="devicon-rails-plain"></i> Rails</li>
-            
-          </ul> 
-        </div class="wrapper">   
-      </section> -->
-
+    <!-- Projects -->
       <section class="projects" id="projects">
         <div class="wrapper">
         
@@ -130,41 +103,89 @@
           </div>
         </div>
       </section>
-
+      <!-- Cv -->
       <section class="cv" id="cv">
         <div class="wrapper">
           <h2>Cv</h2>
-          <button type="button" class="tab">Bio</button>
-          
-            <div class="content">
-              <p>I am a Junior Web Developer who recently joined the community attracted by the opportunity to solve
-                 people’s real problems at a global scale. I am a dedicated member of the team who loves to learn new
-                 skills, works hard to get things done and gets along with everybody. In the past I worked as an assistant
-                 manager at a small trading company in Shanghai as well as a chef in Melbourne. Working abroad taught me
-                 how to deal with people from different backgrounds and to be adaptive to different environments. 
-                 I improved my management, communication and organization skills and learnt to push myself and others to
-                 reach deadlines and produce quality work while maintaing good relationship with my workmates. I am now
-                 focussed on becoming the best web developer I can be while enjoying coding in my spare time.
-              </p>
+          <div class="container">
+            <div class="button bio">
+              <input type="radio" name="tab" class="tab" id="bio">          
+              <label for="bio">Bio</label>   
+              <div class="content">
+                <p>I am a Junior Web Developer who recently joined the community attracted by the opportunity to solve
+                  people’s real problems at a global scale. I am a dedicated member of the team who loves to learn new
+                  skills, works hard to get things done and gets along with everybody. In the past I worked as an assistant
+                  manager at a small trading company in Shanghai as well as a chef in Melbourne. Working abroad taught me
+                  how to deal with people from different backgrounds and to be adaptive to different environments. 
+                  I improved my management, communication and organization skills and learnt to push myself and others to
+                  reach deadlines and produce quality work while maintaing good relationship with my workmates. I am now
+                  focussed on becoming the best web developer I can be while enjoying coding in my spare time.
+                </p>
+              </div>
+            </div>
             
-           </div>
-          <div class="tab">
-            <h3>Skills</h3>
-            <div class="content">
-              
+            <div class="button skills">
+              <input type="radio" name="tab" class="tab" id="skills">
+              <label for="skills">Skills</label>
+              <div class="content">
+                <h3>Web development Skills</h3>
+                <ul class="webdev">
+                  <li><i class="devicon-html5-plain"></i> Html5</li>
+                  <li><i class="devicon-css3-plain"></i> Css3</li>
+                  <li><i class="devicon-javascript-plain"></i> Js</li>
+                  <li><i class="devicon-ruby-plain"></i> Ruby</li>
+                  <li><i class="devicon-rails-plain"></i> Rails</li>
+                </ul> 
+                <br/>
+                <h3>Personal Skills</h3>
+                <ul class="personal">
+                  <li>Management</li><div class="bar"></div>
+                  <li>Leadership</li><div class="bar"></div>
+                  <li>Organization</li><div class="bar"></div>
+                  <li>Teamwork</li><div class="bar"></div>
+                  <li>Customer Service</li><div class="bar"></div>
+                  <li>Creativity</li><div class="bar"></div>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="tab">
-            <h3>Experience</h3>
-            <div class="content">
 
+            <div class="button experience">
+              <input type="radio" name="tab" class="tab" id="experience">
+              <label for="experience">Experience</label> 
+              <div class="content">
+                <p class="date">08/16 - 07/17:</p>
+                <p class="description">Head Chef at Kodama Coffee, Williamstown</p>
+                <p class="date">02/16 - 10/16:</p>
+                <p class="description">Commis Chef at The Builders Arms Hotel, Fitzroy</p>
+                <p class="date">08/14 - 01/16</p>
+                <p class="description">Chef de Partie at Three One 2 One, Richmond</p>
+                <p class="date">01/14 - 03/15</p>
+                <p class="description">Commis Chef at Park Hyatt, Melbourne</p>
+                <p class="date">03/13 - 05/14</p>
+                <p class="description">Chef Assistant at Coffea, Melbourne</p>
+                <p class="date">05/12 - 04/13</p>
+                <p class="description">Team leader, Barista  at Pie Face SCS, Melbourne</p>
+                <p class="date">06/10 - 07/11</p>
+                <p class="description">Assistant Manager at CPO&amp;Patners Co.,Ltd., Shanghai</p>
+        
+              </div>
             </div>
-          </div>
-          <div class="tab">
-            <h3>Education</h3>
-            <div class="content">
 
+            <div class="button education">
+              <input type="radio" name="tab" class="tab" id="education">
+              <label for="education">Education</label> 
+              <div class="content">
+                <p class="date">08/17 - 03/18</p>
+                <p class="description">Web Development Bootcamp, Coder Academy, Melbourne</p>
+                <p class="date">02/13 - 12/13</p>
+                <p class="description">Certificate III in Hospitality, Academia International, Melbourne</p>
+                <p class="date">09/06 - 03/10</p>
+                <p class="description">BA in Chinese Language and Culture, Ca’ Foscari, Venice, Italy</p>
+              </div>
             </div>
+
+            <a href="/assets/alessio-palumbo-cv.pdf" class="download" download>Download Pdf</a>
+
           </div>
         </div>
       </section>
@@ -174,15 +195,11 @@
           <h2>Contact me</h2>
           <form action="" autocomplete="on">
             <fieldset>
-              <label for="firstName">First Name:</label>
-                <p><input type="text" name="firstName" required></p>
-              <label for"lastName">Last Name:</label>
-                <p><input type="text" name="lastName" required></p>
-              <label for="email">Email:</label>
-                <p><input type="email" name="email" required></p>
-              <label for="message">Message:</label>
-                <textarea name="message" rows="5" required></textarea>
-              <input type="submit" value="Send email">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" rows="5" placeholder="Message" required></textarea>
+              <button type="submit"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+              
             </fieldset>
           </form>
         </div>

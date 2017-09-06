@@ -13,6 +13,13 @@ html {
   background-position: center;
   background-size: cover;
 }
+/* to get rid of outline when pressing on a button or link */
+  button::-moz-focus-inner {
+  border:0;
+} 
+  a {
+    outline: none;
+  }
 /* nav */
 nav {
   display: none;
@@ -25,6 +32,8 @@ nav {
   background: rgb(255, 255, 255, 0.3);
   border-right: 20px solid #6C718A;
   text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }
 nav:hover {
   left: 0;
@@ -43,8 +52,9 @@ nav a {
   display: table;
   height: 25%;
   width: 100%;
+  transition: all ease-in-out 0.2s;
 }
-nav a:hover {
+nav a:hover, nav a:active {
   background: white;
   font-size: 120%;
   font-weight: bold;
@@ -76,39 +86,23 @@ header h1 {
 section {
   width: 100%;
   background: rgb(255, 255, 255);
-  margin-bottom: 100px;
   padding-bottom: 30px;
 }
 section h2 {
-  border-bottom: 1px solid #E5EDF1;
+  border-bottom: 2px solid #B3BBBD;
   padding-bottom: 1em;
-  margin-bottom: 1em;
   padding-top: 2em;
+  margin-bottom: 2em;
 }
-/* Skills */
-.skills img {
-  width: 25px;
-}
-.skills li {
-  display: inline-block;
-  width: 32%;
-  line-height: 2em;
-  font-size: 110%;
-}
-.skills li:hover {
-  background: #CAD1DB;
-  border-radius: 50%;
-}
+
 /* Projects */
-.projects h2 {
-  background: rgb(255, 255, 255, 0.3);
-}
+
 .item {
   width: 288px;
   margin: 0 auto;
 }
 .item h3 {
-  margin: 2em auto 1em auto;
+  margin: 1em auto 1em auto;
 }
 .item a p {
   text-align: center;
@@ -126,60 +120,146 @@ section h2 {
   width: 288px;
   margin: 0 auto;
 }
-/* Cv */
-button::-moz-focus-inner {
-  border:0;
+/* cv */
+section.projects {
+  background: #E5EDF1;
 }
-.cv button {
+section.cv  {
+  background: ;
+}
+.cv input {
   width: 100%;
   height: 50px;
-  background: white;
-  border: none;
+  display: none;
+}
+.cv label, a.download {
+  width: 288px;
+  height: 50px;
+  background: #CAD1DB;
   color: inherit;
   font-size: 1.3em;
+  display: inline-block;
+  padding-top: 0.5em;
+}
+a.download {
+  margin-top: 40px;
+  border-radius: 10px;
+  background: #E5EDF1;
+  color: #313345;
+  font-size: 1.1em;
 }
 .content {
   display: none;
+  padding: 1em;
 }
-.tab:focus {
-  border: 3px solid #CAD1DB;
+.tab:checked {
+  pointer-events: none;
 }
-.tab:focus + .content {
+.tab:checked + label, a.download:active{
+  background: #6C718A;
+  color: #CAD1DB;
+}
+label:hover, a.download:hover {
+  background: #6D3939;
+  color: #6C718A;
+}
+#bio:checked ~ .content, #skills:checked ~ .content,
+#experience:checked ~ .content, #education:checked ~ .content {
   display: block;
+  pointer-events: auto;
+}
+.cv .bio p {
+  text-align: left;
+}
+.skills h3 {
+  margin-bottom: 1em;
+}
+.skills .webdev li {
+  display: inline-block;
+  width: 32%;
+  line-height: 2em;
+  font-size: 110%;
+}
+.skills .webdev li:hover {
+  background: #CAD1DB;
+  border-radius: 50%;
+}
+.skills li .bar {
+  float: left;
+  height: 10px;
+  background: black;
 }
 
-.cv h3 {
-  margin-bottom: 10px;
-}
-.cv p {
-  text-align: left;
-  padding: 1em;
-  
-}
 /* contact */
+.contact {
+  background: #CAD1DB;
+}
 fieldset {
   width: 90%;
   margin: 0 auto;
-  text-align: left;
   padding: 10px;
+  border: none;
+  max-width: 600px;
+  
 }
-textarea {
+.contact input, textarea, button {
+  box-sizing: border-box;
   width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: #E5EDF1;
+  padding-left: 0.5em;
+  border: none;
+  box-shadow: 3px 3px 4px #313345;
 }
-input[type="submit"] {
-  width: 100px;
-  margin-top: 10px;
+.contact input {
+  height: 50px;
+}
+.contact textarea {
+  padding-top: 0.5em;
+}
+button {
+  content: "Send email";
+  height: 50px;
+  width: 200px;
+  background: #6C718A;
+  color: white;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+button:before {
+  content: "Send";
+  margin-right: 0.5em;
+}
+button:focus, button:focus:before{
+  background: #E5EDF1;
+  color: #6C718A;
+  transform: translate(10px, 4px);
+  content: "Sent!";
+}
+/* footer */
+footer {
+  background: #6C718A;
+  height: 50px;
 }
 
 
 @media screen and (min-width: 768px){
+  .wrapper {
+    width: 60%;
+    max-width: 1800px;
+  }
+  /* header */
+  header h1 {
+    font-size: 1.8em;
+  } 
   /* nav */
   nav {
     display: block;
   }
-  .wrapper {
-    width: 60%;
-  }
+  /* projects */
   .projects .flex {
     display: flex;
     flex-wrap: wrap;
@@ -188,9 +268,8 @@ input[type="submit"] {
     flex: auto;
     margin: 10px;
   }
-  header h1 {
-    font-size: 1.8em;
-  }
+  
+
 }
 
 @media screen and (min-width: 1440px){
@@ -198,4 +277,21 @@ input[type="submit"] {
     left: -220px;
     width: 240px;
   }
+  /* cv */
+  .container {
+    min-height: 600px;
+    position: relative;
+    text-align: left;
+  }
+  .button label, a.download {
+    width: 200px;
+    padding-left: 1em;
+  }
+  .content {
+    position: absolute;
+    top: -20px;
+    left: 250px;
+  }
 }
+
+
