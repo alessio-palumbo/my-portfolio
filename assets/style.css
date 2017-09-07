@@ -5,9 +5,9 @@
 }
 html {
   font-family: 'Lato', sans-serif;
-  color: #6D3939;
+  color: #313345;
   line-height: 1.5em;
-  background-image: url("background.png");
+  background-image: url("background00.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -21,22 +21,52 @@ html {
     outline: none;
   }
 /* nav */
-nav {
+input[type="checkbox"] {
   display: none;
+}
+label.toggle {
   position: fixed;
-  top: 20%;
-  left: -140px;
-  width: 160px;
-  height: 50%;
-  max-height: 500px;
-  background: rgb(255, 255, 255, 0.3);
-  border-right: 20px solid #6C718A;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background: #6C718A;
+  z-index: 1;
+  padding: 6px;
+}
+label.toggle:before {
+  content: "MENU";
+  color: #CAD1DB;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+label.toggle i {
+  color:#CAD1DB;
+  font-size: 1.3em;
+
+}
+input:checked + label.toggle:before {
+  content: "CLOSE";
+}
+input:checked + label.toggle i {
+  transition: transform ease 0.5s; 
+  transform: rotate(-180deg);
+}
+input:checked ~ nav {
+  width: 100%;
+  top: 40px;
+}
+nav {
+  position: fixed;
+  background: rgb(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
-  transition: all ease-in-out 0.5s;
-}
-nav:hover {
-  left: 0;
+  transition: left ease-in-out 0.5s;
+  height: 200px;
+  top: -200px;
+  width: 100%;
+  z-index: 10;
 }
 ul {
   list-style: none;
@@ -46,7 +76,8 @@ nav ul {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: #313345;
+  font-weight: bold;
 }
 nav a {
   display: table;
@@ -55,9 +86,9 @@ nav a {
   transition: all ease-in-out 0.2s;
 }
 nav a:hover, nav a:active {
-  background: white;
+  background: #5D7C8B;
+  color: white;
   font-size: 120%;
-  font-weight: bold;
 }
 nav li {
   display: table-cell;
@@ -71,17 +102,6 @@ nav li {
 header {
   height: 100vh;
 }
-header h1 {
-  font-size: 1.3em;
-  line-height: 2em;
-  border-radius: 20px;
-  width: 60%;
-  background: rgb(255, 255, 255, 0.3);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 20%;
-  left: 50%;
-}
 /* Section common styles */
 section {
   width: 100%;
@@ -92,7 +112,8 @@ section h2 {
   border-bottom: 2px solid #B3BBBD;
   padding-bottom: 1em;
   padding-top: 2em;
-  margin-bottom: 2em;
+  margin: auto auto 2em auto;
+  width: 80%;
 }
 
 /* Projects */
@@ -100,18 +121,22 @@ section h2 {
 .item {
   width: 288px;
   margin: 0 auto;
+  
 }
 .item h3 {
   margin: 1em auto 1em auto;
+}
+.item a > img {
+  transition: border ease 0.2s;
 }
 .item a p {
   text-align: center;
 }
 .item a:hover > img {
-  border: 4px solid #6EC39E;
+  border: 5px solid #6C718A;
 }
 .item a:hover {
-  font-size: 110%;
+  transform: scale(1.1);
   font-weight: bold;
 }
 .item p {
@@ -124,9 +149,6 @@ section h2 {
 section.projects {
   background: #E5EDF1;
 }
-section.cv  {
-  background: ;
-}
 .cv input {
   width: 100%;
   height: 50px;
@@ -135,38 +157,39 @@ section.cv  {
 .cv label, a.download {
   width: 288px;
   height: 50px;
-  background: #CAD1DB;
-  color: inherit;
+  background: #6C718A;
+  color: #CAD1DB;
   font-size: 1.3em;
   display: inline-block;
   padding-top: 0.5em;
+  box-shadow: 3px 3px 3px black;
+  margin-bottom: 4px;
+  border-radius: 5px;
 }
 a.download {
   margin-top: 40px;
   border-radius: 10px;
-  background: #E5EDF1;
-  color: #313345;
+  color: white;
   font-size: 1.1em;
 }
 .content {
   display: none;
   padding: 1em;
 }
-.tab:checked {
-  pointer-events: none;
-}
-.tab:checked + label, a.download:active{
+
+.tab:checked + label, .tab:active + label, a.download:active{
+  transform: translate(2px, 0);
+  box-shadow: 1px 1px 3px black;
   background: #6C718A;
   color: #CAD1DB;
 }
-label:hover, a.download:hover {
-  background: #6D3939;
+.cv label:hover, a.download:hover {
+  background: #CAD1DB;
   color: #6C718A;
 }
 #bio:checked ~ .content, #skills:checked ~ .content,
 #experience:checked ~ .content, #education:checked ~ .content {
   display: block;
-  pointer-events: auto;
 }
 .cv .bio p {
   text-align: left;
@@ -180,15 +203,7 @@ label:hover, a.download:hover {
   line-height: 2em;
   font-size: 110%;
 }
-.skills .webdev li:hover {
-  background: #CAD1DB;
-  border-radius: 50%;
-}
-.skills li .bar {
-  float: left;
-  height: 10px;
-  background: black;
-}
+
 
 /* contact */
 .contact {
@@ -242,22 +257,50 @@ button:focus, button:focus:before{
 /* footer */
 footer {
   background: #6C718A;
-  height: 50px;
+  padding: 20px 40px;
+  text-align: center;
 }
+footer a {
+  font-size: 30px;
+  margin: 2%;
+}
+footer i {
+  color: #CAD1DB;
+}
+footer i:hover {
+  color: white;
+}
+
 
 
 @media screen and (min-width: 768px){
   .wrapper {
-    width: 60%;
+    width: 80%;
     max-width: 1800px;
+  }
+  h2 {
+    width: 100%;
   }
   /* header */
   header h1 {
     font-size: 1.8em;
   } 
   /* nav */
-  nav {
-    display: block;
+  label.toggle {
+    display: none;
+  }
+  nav{
+    position: fixed;
+    top: 20%;
+    left: -130px;
+    width: 160px;
+    height: 50%;
+    max-height: 500px;
+    border-right: 30px solid #6C718A;
+    border-bottom: none;
+  }
+  nav:hover {
+    left: 0;
   }
   /* projects */
   .projects .flex {
@@ -268,20 +311,15 @@ footer {
     flex: auto;
     margin: 10px;
   }
-  
-
-}
-
-@media screen and (min-width: 1440px){
-  nav {
-    left: -220px;
-    width: 240px;
-  }
   /* cv */
   .container {
-    min-height: 600px;
+    width: 680px;
+    margin: 0 auto;
+    height: 500px;
+    max-width: ;
     position: relative;
     text-align: left;
+    padding-left: 5%;
   }
   .button label, a.download {
     width: 200px;
@@ -292,6 +330,28 @@ footer {
     top: -20px;
     left: 250px;
   }
+  .skills ul {
+    padding-left: 2em;
+  }
+
+  /* footer */
+  footer a {
+    font-size: 40px;
+    margin: 5%;
+  }
 }
+@media screen and (min-width: 1100px) {
+   .wrapper {
+     width: 60%;
+   }
+   nav {
+    left: -220px;
+    width: 240px;
+  }
 
-
+@media screen and (min-width: 1440px){
+  nav {
+    left: -220px;
+    width: 240px;
+  }
+}
