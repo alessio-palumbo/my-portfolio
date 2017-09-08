@@ -10,7 +10,7 @@ html {
   background-image: url("background-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
 }
 /* to get rid of outline when pressing on a button or link */
