@@ -10,8 +10,9 @@ html {
   background-image: url("background-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
+  z-index: 1;
 }
 /* body:before {
   content: "";
