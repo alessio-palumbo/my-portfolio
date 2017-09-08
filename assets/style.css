@@ -15,17 +15,6 @@ header {
   background-attachment: fixed;
   background-size: cover;
 }
-/* #background_wrap {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: 100%;
-  background-image: url('background-min.jpg');
-  background-attachment: fixed;
-} */
 /* to get rid of outline when pressing on a button or link */
   button::-moz-focus-inner {
   border:0;
@@ -85,7 +74,7 @@ label.toggle i {
 }
 nav {
   position: fixed;
-  background: rgb(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
   transition: left ease-in-out 0.5s;
