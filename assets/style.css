@@ -7,10 +7,9 @@ html {
   font-family: 'Lato', sans-serif;
   color: #313345;
   line-height: 1.5em;
-  background: red;
   background-image: url("background-min.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: 100%;
   background-position: center center;
   background-size: cover;
   z-index: 1;
