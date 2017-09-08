@@ -10,7 +10,7 @@ html {
   background: url("background-min.jpg") no-repeat white;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
 }
 /* #background_wrap {
   z-index: -1;
