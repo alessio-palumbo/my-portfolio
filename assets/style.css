@@ -7,8 +7,11 @@ html {
   font-family: 'Lato', sans-serif;
   color: #313345;
   line-height: 1.5em;
+  background: url("background-min.jpg") no-repeat white;
+  background-attachment: fixed;
+  background-size: cover;
 }
-#background_wrap {
+/* #background_wrap {
   z-index: -1;
   position: fixed;
   top: 0;
@@ -18,7 +21,7 @@ html {
   background-size: 100%;
   background-image: url('background-min.jpg');
   background-attachment: fixed;
-}
+} */
 /* to get rid of outline when pressing on a button or link */
   button::-moz-focus-inner {
   border:0;
