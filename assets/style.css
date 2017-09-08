@@ -9,7 +9,7 @@ html {
   line-height: 1.5em;
   background: url("background-min.jpg") no-repeat white;
   background-position: center center;
-  background-attachment: fixed;
+  
   background-size: cover;
 }
 /* to get rid of outline when pressing on a button or link */
