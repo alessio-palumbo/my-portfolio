@@ -258,20 +258,20 @@ fieldset {
 .contact #message {
   padding-top: 0.5em;
 }
-button {
+.contact button {
   content: "Send email";
   height: 50px;
   width: 200px;
   background: #6C718A;
   color: white;
-  transition: all ease 0.5s;
+  transition: content ease 0.5s;
   cursor: pointer;
 }
-button:before {
+.contact button:before {
   content: "Send";
   margin-right: 0.5em;
 }
-button:focus, button:focus:before{
+.contact button:focus, .contact button:focus:before{
   background: #E5EDF1;
   color: #6C718A;
   transform: translate(10px, 4px);
@@ -315,7 +315,7 @@ footer i:hover {
   label.toggle {
     display: none;
   }
-  nav/*, input:checked ~ nav*/{
+  nav {
     position: fixed;
     top: 20%;
     left: -130px;
