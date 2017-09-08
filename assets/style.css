@@ -21,7 +21,7 @@ html {
     outline: none;
   }
 /* nav */
-input[type="checkbox"] {
+#nav-toggle {
   display: none;
 }
 label.toggle {
@@ -32,6 +32,19 @@ label.toggle {
   background: #6C718A;
   z-index: 1;
   padding: 6px;
+}
+/* To allow closing the menu when clicking outside of it */
+label.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+#nav-toggle:checked ~ label.overlay {
+  display: block;
 }
 label.toggle:before {
   content: "MENU";
@@ -46,14 +59,14 @@ label.toggle i {
   font-size: 1.3em;
 
 }
-input:checked + label.toggle:before {
+#nav-toggle:checked + label.toggle:before {
   content: "CLOSE";
 }
-input:checked + label.toggle i {
+#nav-toggle:checked + label.toggle i {
   transition: transform ease 0.5s; 
   transform: rotate(-180deg);
 }
-input:checked ~ nav {
+#nav-toggle:checked ~ nav {
   width: 100%;
   top: 40px;
 }
@@ -177,11 +190,11 @@ a.download {
   padding: 1em;
 }
 
-.tab:checked + label, .tab:active + label, a.download:active{
+.tab:checked + label, a.download:active{
   transform: translate(2px, 0);
   box-shadow: 1px 1px 3px black;
-  background: #6C718A;
-  color: #CAD1DB;
+  background: #E5EDF1;
+  color: #313345;
 }
 .cv label:hover, a.download:hover {
   background: #CAD1DB;
@@ -274,6 +287,9 @@ footer i:hover {
 
 
 @media screen and (min-width: 768px){
+  html {
+    font-size: 1.1em;
+  }
   .wrapper {
     width: 80%;
     max-width: 1800px;
@@ -289,7 +305,7 @@ footer i:hover {
   label.toggle {
     display: none;
   }
-  nav{
+  nav/*, input:checked ~ nav*/{
     position: fixed;
     top: 20%;
     left: -130px;
@@ -315,20 +331,19 @@ footer i:hover {
   .container {
     width: 680px;
     margin: 0 auto;
-    height: 500px;
-    max-width: ;
+    height: 620px;
     position: relative;
     text-align: left;
     padding-left: 5%;
   }
   .button label, a.download {
-    width: 200px;
+    width: 220px;
     padding-left: 1em;
   }
   .content {
     position: absolute;
     top: -20px;
-    left: 250px;
+    left: 270px;
   }
   .skills ul {
     padding-left: 2em;
@@ -353,5 +368,14 @@ footer i:hover {
   nav {
     left: -220px;
     width: 240px;
+  }
+  .cv label, .cv .download {
+    width: 250px;
+  }
+  .cv .content {
+    left: 320px;
+  }
+  .cv .container {
+    width: 90%;
   }
 }
