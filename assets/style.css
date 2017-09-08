@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background: #E5EDF1;
+  color: #6C718A;
+}
 html {
   font-family: 'Lato', sans-serif;
   color: #313345;
@@ -10,7 +14,7 @@ html {
 
 }
 header {
-    background: url("background-min.jpg") no-repeat white;
+  background: url("background-min.jpg") no-repeat white;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -74,7 +78,7 @@ label.toggle i {
 }
 nav {
   position: fixed;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   text-align: center;
   cursor: pointer;
   transition: left ease-in-out 0.5s;
@@ -177,7 +181,7 @@ section.projects {
   font-size: 1.3em;
   display: inline-block;
   padding-top: 0.5em;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 5px 5px 3px black;
   margin-bottom: 4px;
   border-radius: 5px;
 }
@@ -191,10 +195,13 @@ a.download {
   display: none;
   padding: 1em;
 }
-
+.tab:active + label {
+  transform: translate(3px, 0);
+  box-shadow: 1px 1px 3px black;
+}
 .tab:checked + label, a.download:active{
   transform: translate(2px, 0);
-  box-shadow: 1px 1px 3px black;
+  box-shadow: 3px 3px 3px black;
   background: #E5EDF1;
   color: #313345;
 }
@@ -232,11 +239,12 @@ fieldset {
   max-width: 600px;
   
 }
-.contact input, textarea, button {
+.contact input, .contact #message, .contact button {
   box-sizing: border-box;
   width: 90%;
   margin: 10px;
   border-radius: 10px;
+  font-family: inherit;
   font-size: 1.2em;
   font-weight: bold;
   background: #E5EDF1;
@@ -247,7 +255,7 @@ fieldset {
 .contact input {
   height: 50px;
 }
-.contact textarea {
+.contact #message {
   padding-top: 0.5em;
 }
 button {
