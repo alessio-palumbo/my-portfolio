@@ -40,13 +40,6 @@ header h1 {
   position: absolute;
   left: -9999px;
 }
-/* .arrow {
-  position: absolute;
-  bottom: 40px;
-  transform: translateX(-50%);
-  left: 50%;
-  color: white;
-} */
 /* nav */
 #nav-toggler {
   position: fixed;
