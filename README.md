@@ -72,6 +72,6 @@ Finding the right colour palette that would match the background I chose. Decidi
 ### Technical problems
 Trying to find a way to implement a pure css navbar hasn't been easy, and I had to fix a lot of bugs and try to build my own solution from different sources.
 
-[moodboard][https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/moodboard.png]
-[background][https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/background-min.jpg]
-[figma][https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/figma.png]
+[moodboard]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/moodboard.png
+[background]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/background-min.jpg
+[figma]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/figma.png
