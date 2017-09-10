@@ -33,10 +33,20 @@ ul {
 header {
   background: url("background-min.jpg") no-repeat white;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
-
+header h1 {
+  position: absolute;
+  left: -9999px;
+}
+/* .arrow {
+  position: absolute;
+  bottom: 40px;
+  transform: translateX(-50%);
+  left: 50%;
+  color: white;
+} */
 /* nav */
 #nav-toggler {
   position: fixed;
@@ -290,6 +300,9 @@ footer i:hover {
 @media screen and (min-width: 768px){
   html {
     font-size: 1.1em;
+  }
+  header {
+    background-attachment: fixed;
   }
   .wrapper {
     width: 80%;
