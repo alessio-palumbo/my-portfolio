@@ -54,7 +54,7 @@ header {
 #nav-toggler i {
   font-size: 0.9em;
   position: relative;
-  top: -2px;
+  top: -1px;
 }
 #nav-toggler:before {
   content: "MENU";
@@ -67,7 +67,7 @@ header {
 #nav-toggler:focus > i {
   transition: transform ease 0.5s; 
   transform: rotate(-180deg);
-  top: -4px;
+  top: -3px;
 }
 #nav-toggler:focus + nav {
   visibility: visible;
