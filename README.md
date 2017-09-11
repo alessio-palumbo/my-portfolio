@@ -39,7 +39,6 @@ To get started and get an idea of how my portfolio would look like I googled oth
 I decided to use a background image as the homepage for my portfolio website. I modified the background in figma and added a profile picture and a short description and greeting. 
 
 ![alt text][background]
-[Figma][3]
 
 I divided the website in 4 section:
 * Home
@@ -56,6 +55,7 @@ I decided to include a interactive cv so that the prospective employers would be
 At the end of the website I included a contact form as well as the links to my Github, Linkedin, Codepen and Twitter profiles.
 
 ![alt text][figma]
+[Figma][3]
 
 ### <a id="Responsive-Design"></a>Responsive Design
 This is a mobile first website, with easy navigation through scrolling and top navbar. I used a wrapper to make sure the main content is centered at all times and doesn't expand too much when the page is resized. In fact I also included a maximum width to avoid breaking the design on bigger desktop devices. I used flexbox on the projects section to manage the positioning of the projects across different devices.
