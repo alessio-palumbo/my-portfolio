@@ -17,6 +17,7 @@ For this purpose I decided to implent a pleasant casual working environment back
 To achieve my goal I made use of the following tools:
 * VsCode
 * Figma
+* Optimizilla
 * Github
 * Netlify
 
@@ -30,12 +31,15 @@ And the following resources:
 ### <a id="#Inspiration"></a>Inspiration
 To get started and get an idea of how my portfolio would look like I googled other web developers websites and selected a few that I liked either for design or features. I also made a moodboard and build a color palette. Finally I picked a background for the home page from "unsplash".
 
+[Matt Farley][1]
+[Devin Walker][2]
 ![alt text][moodboard]
 
 ### <a id="Design"></a>Design
 I decided to use a background image as the homepage for my portfolio website. I modified the background in figma and added a profile picture and a short description and greeting. 
 
 ![alt text][background]
+[Figma][3]
 
 I divided the website in 4 section:
 * Home
@@ -67,12 +71,15 @@ Next section showcases the project providing a screenshot and description as wel
 The cv section is intended to offer an easy and quick navigation through professional information and give the option to download a pdf document. Last section is a simple contact form followed by a few more personal links.
 
 ### <a id="#Problem"></a>Problems
-I encountered several problems during the process.
-### Design Problems
+I encountered several problems during the process:
+#### Design Problems
 Finding the right colour palette that would match the background I chose. Deciding what kind of navbar to use and whether a navbar for the mobile version was needed. The use of the colours with the different sections and controls. 
-### Technical problems
+#### Technical problems
 Trying to find a way to implement a pure css navbar hasn't been easy, and I had to fix a lot of bugs and try to build my own solution from different sources.
 
 [moodboard]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/moodboard.png
 [background]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/background-min.jpg
 [figma]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/figma.png
+[1]: http://mattfarley.ca/
+[2]: https://imdev.in/
+[3]: https://www.figma.com/file/BLuitzqbxPz0GFZoilBZrrgu/Portfolio
