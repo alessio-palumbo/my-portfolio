@@ -32,7 +32,9 @@ And the following resources:
 To get started and get an idea of how my portfolio would look like I googled other web developers websites and selected a few that I liked either for design or features. I also made a moodboard and build a color palette. Finally I picked a background for the home page from "unsplash".
 
 [Matt Farley][1]
+
 [Devin Walker][2]
+
 ![alt text][moodboard]
 
 ### <a id="Design"></a>Design
