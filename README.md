@@ -78,6 +78,7 @@ I encountered several problems during the process:
 Finding the right colour palette that would match the background I chose. Deciding what kind of navbar to use and whether a navbar for the mobile version was needed. The use of the colours with the different sections and controls. 
 #### Technical problems
 Trying to find a way to implement a pure css navbar hasn't been easy, and I had to fix a lot of bugs and try to build my own solution from different sources.
+[css navbar][4]
 
 [moodboard]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/moodboard.png
 [background]: https://github.com/alessio-palumbo/my-portfolio/blob/master/assets/background-min.jpg
@@ -85,3 +86,4 @@ Trying to find a way to implement a pure css navbar hasn't been easy, and I had 
 [1]: http://mattfarley.ca/
 [2]: https://imdev.in/
 [3]: https://www.figma.com/file/BLuitzqbxPz0GFZoilBZrrgu/Portfolio
+[4]: https://codepen.io/AlessioP/pen/VzoQVm
