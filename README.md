@@ -46,7 +46,7 @@ I divided the website in 4 section:
 * Home
 * Projects
 * Cv
-* Contac me
+* Contact me
 ##### Navbar
 I decided to implement a fixed hidden navbar at the top for easy mobile access and switch to a hoverable side hidden navbar for larger devices.
 ##### Projects
@@ -64,7 +64,7 @@ This is a mobile first website, with easy navigation through scrolling and top n
 The navbar, is fixed on top for smaller devices and is moved to the left for bigger ones. In both case is not visible, but can be slid open when clicked on the menu bar.
 
 ### <a id="Style"></a>Style
-I utilized a 4 colors palette throughout the design and styled the sections accordingly, alternating the colors and maintaing consistency thourghout the design. I used Googlefont Lato as a main font. As for the animation/navbar animation I decided to follow a pure Css approach. I found different resources to build a hidden navbar and I have been through diffent ones, from hidden checkboxes or radio to my own implementation using anchor and button to simulate the click event.
+I utilized a 4 colors palette throughout the design and styled the sections accordingly, alternating the colors and maintaing consistency thourghout the design. I used Googlefont Lato as a main font as well as Kalam for the text in the notebook. As for the animation/navbar animation I decided to follow a pure Css approach. I found different resources to build a hidden navbar and I have been through diffent ones, from hidden checkboxes or radio to my own implementation using anchor and button to simulate the click event.
 
 ### <a id="User-Experience"></a>User Experience
 The design is simple and straightforward. The user can scroll through the website or use the navbar to navigate to the desired section.
