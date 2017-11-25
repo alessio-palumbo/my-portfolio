@@ -17,7 +17,7 @@ html {
   button::-moz-focus-inner {
   border:0;
 } 
-button:focus, input:focus {
+button:focus, input:focus, textarea:focus {
   outline: none;
 }
 a {
