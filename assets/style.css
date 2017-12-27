@@ -148,9 +148,10 @@ section h2 {
   margin: 1em auto;
 }
 .item a > img {
+  border: 5px solid transparent;
   transition: border ease 0.2s;
 }
-.item a p {
+.item p:first-of-type {
   text-align: center;
 }
 .item a:hover > img {
