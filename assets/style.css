@@ -154,6 +154,9 @@ section h2 {
 .item p:first-of-type {
   text-align: center;
 }
+.item p:first-of-type:hover > a {
+  text-decoration: underline;
+}
 .item a:hover > img {
   border: 5px solid #6C718A;
 }
@@ -369,7 +372,7 @@ footer i:hover {
   /* cv */
   .container {
     width: 100%;
-    height: 600px;
+    height: 650px;
     position: relative;
   }
   .cv button, a.download {
