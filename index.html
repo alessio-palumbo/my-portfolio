@@ -52,10 +52,16 @@
 
   <!-- Header -->
   <header id="header">
-    <h1>Hi, I'm Alessio Palumbo, a web developer</h1>
+    <div class="greeting">
+      <h1>Hi, I'm Alessio</h1>
+      <p>I design and build modern web applications</p>
+    </div>
+    <a href='#projects' class='scroll-arrow'>
+      <i class='fa fa-chevron-down'></i>
+    </a>
     <!-- Navigation -->
     <a href="#" id="nav-toggler">
-      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
     <nav>
       <ul>
@@ -66,12 +72,27 @@
           <li>Projects</li>
         </a>
         <a href="#cv">
-          <li>Cv</li>
+          <li>About</li>
         </a>
         <a href="#contact">
           <li>Contact me</li>
         </a>
       </ul>
+      <div class='nav-links'>
+        <hr />
+        <a href="https://github.com/alessio-palumbo" target="_blank">
+          <i class="devicon-github-plain"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alessio-palumbo/" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://codepen.io/AlessioP/#" target="_blank">
+          <i class="fa fa-codepen" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/_alessiopalumbo" target="_blank">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
     </nav>
   </header>
   <!-- Projects -->
@@ -84,9 +105,13 @@
         <div class="item">
           <h3>ChefBasket</h3>
           <a href="https://chefbasket.herokuapp.com">
-            <img src="/assets/chefbasket.png" alt="a preview of the project ChefBasket">
+            <div class='frame'>
+              <img src="/assets/chefbasket.png" alt="a preview of the project ChefBasket">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
-          <p>
+          <p class='github-link'>
             <a href="https://github.com/alessio-palumbo/chefbasket">
               <i class="devicon-github-plain"></i> View on Github
             </a>
@@ -96,9 +121,13 @@
         <div class="item">
           <h3>Instarails</h3>
           <a href="https://instarails-io.herokuapp.com">
-            <img src="/assets/instarails.png" alt="a preview of the project Instarails">
+            <div class='frame'>
+              <img src="/assets/instarails.png" alt="a preview of the project Instarails">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
-          <p>
+          <p class='github-link'>
             <a href="https://github.com/alessio-palumbo/instarails">
               <i class="devicon-github-plain"></i> View on Github
             </a>
@@ -108,9 +137,13 @@
         <div class="item">
           <h3>RailsBnb</h3>
           <a href="#">
-            <img src="/assets/railsbnb.png" alt="a preview of the project Railsbnb">
+            <div class='frame'>
+              <img src="/assets/railsbnb.png" alt="a preview of the project Railsbnb">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
-          <p>
+          <p class='github-link'>
             <a href="https://github.com/alessio-palumbo/rails_bnb">
               <i class="devicon-github-plain"></i> View on Github
             </a>
@@ -120,9 +153,13 @@
         <div class="item">
           <h3>My Portfolio</h3>
           <a href="https://alessio-palumbo.netlify.com/">
-            <img src="/assets/portfolio.png" alt="a preview of the project myPortfolio">
+            <div class='frame'>
+              <img src="/assets/portfolio.png" alt="a preview of the project myPortfolio">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
-          <p>
+          <p class='github-link'>
             <a href="https://github.com/alessio-palumbo/my-Portfolio">
               <i class="devicon-github-plain"></i> View on Github
             </a>
@@ -132,21 +169,29 @@
         <div class="item">
           <h3>Wolf of React</h3>
           <a href="https://wolfofreact.netlify.com">
-            <img src="/assets/wolfofreact.png" alt="a preview of the project Wolf of React">
-            <p>
-              <a href="https://github.com/alessio-palumbo/wolf-of-react">
-                <i class="devicon-github-plain"></i> View on Github
-              </a>
-            </p>
+            <div class='frame'>
+              <img src="/assets/wolfofreact.png" alt="a preview of the project Wolf of React">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
+          <p class='github-link'>
+            <a href="https://github.com/alessio-palumbo/wolf-of-react">
+              <i class="devicon-github-plain"></i> View on Github
+            </a>
+          </p>
           <p>A React app displaying data from a stock market API</p>
         </div>
         <div class="item">
           <h3>Nodeshop</h3>
           <a href="https://nodeshop.netlify.com">
-            <img src="/assets/nodeshop.png" alt="a preview of the project Nodeshop">
+            <div class='frame'>
+              <img src="/assets/nodeshop.png" alt="a preview of the project Nodeshop">
+              <div class='frame-text'>View</div>
+              <div class='frame-overlay'></div>
+            </div>
           </a>
-          <p>
+          <p class='github-link'>
             <a href="https://github.com/alessio-palumbo/nodeshop">
               <i class="devicon-github-plain"></i> View on Github
             </a>
@@ -157,21 +202,16 @@
     </div>
   </section>
 
-  <!-- Cv -->
+  <!-- About -->
   <section class="cv" id="cv">
     <div class="wrapper">
-      <h2>Cv</h2>
+      <h2>About</h2>
       <div class="container">
         <button type="button">Bio</button>
         <div class="content bio">
-          <p>I am a Junior Web Developer who recently joined the community attracted by the opportunity to solve people’s real
-            problems at a global scale. I am a dedicated member of the team who loves to learn new skills, works hard to
-            get things done and gets along with everybody. In the past I worked as an assistant manager at a small trading
-            company in Shanghai as well as a chef in Melbourne. Working abroad taught me how to deal with people from different
-            backgrounds and to be adaptive to different environments. I improved my management, communication and organization
-            skills and learnt to push myself and others to reach deadlines and produce quality work while maintaing good
-            relationship with my workmates. I am now focussed on becoming the best web developer I can be while enjoying
-            coding in my spare time.
+          <img src='/assets/selfxs.jpg' width='100%' alt='profile picture' />
+          <p>I’m a Melbourne based full stack developer who designs and implements modern and scalable solutions using the latest
+            tool and technologies.
           </p>
         </div>
 
@@ -214,40 +254,6 @@
           </ul>
         </div>
 
-
-        <button type="button">Experience</button>
-        <div class="content">
-          <p class="date">08/17 - 03/18:</p>
-          <p class="description">Bootcamper at Coder Academy, Melbourne</p>
-          <p class="date">08/16 - 07/17:</p>
-          <p class="description">Head Chef at Kodama Coffee, Williamstown</p>
-          <p class="date">02/16 - 10/16:</p>
-          <p class="description">Commis Chef at The Builders Arms Hotel, Fitzroy</p>
-          <p class="date">08/14 - 01/16</p>
-          <p class="description">Chef de Partie at Three One 2 One, Richmond</p>
-          <p class="date">01/14 - 03/15</p>
-          <p class="description">Commis Chef at Park Hyatt, Melbourne</p>
-          <p class="date">03/13 - 05/14</p>
-          <p class="description">Chef Assistant at Coffea, Melbourne</p>
-          <p class="date">05/12 - 04/13</p>
-          <p class="description">Team leader, Barista at Pie Face SCS, Melbourne</p>
-          <p class="date">06/10 - 07/11</p>
-          <p class="description">Assistant Manager at CPO&amp;Patners Co.,Ltd., Shanghai</p>
-
-        </div>
-
-
-        <button type="button">Education</button>
-        <div class="content">
-          <p class="date">08/17 - 03/18</p>
-          <p class="description">Web Development Bootcamp, Coder Academy, Melbourne</p>
-          <p class="date">02/13 - 12/13</p>
-          <p class="description">Certificate III in Hospitality, Academia International, Melbourne</p>
-          <p class="date">09/06 - 03/10</p>
-          <p class="description">BA in Chinese Language and Culture, Ca’ Foscari, Venice, Italy</p>
-        </div>
-
-
         <a href="/assets/alessio-palumbo-cv.pdf" class="download" download>
           <i class="fa fa-download" aria-hidden="true"></i>
           Download Pdf</a>
@@ -268,13 +274,10 @@
           <button type="submit">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </button>
-
         </fieldset>
       </form>
     </div>
   </section>
-
-
 
   <!-- Footer -->
   <footer>
@@ -290,9 +293,6 @@
       </a>
       <a href="https://twitter.com/_alessiopalumbo" target="_blank">
         <i class="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-slack" aria-hidden="true"></i>
       </a>
     </div>
   </footer>
