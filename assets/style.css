@@ -249,8 +249,8 @@ section h2 {
   position: absolute;
   z-index: 8;
   width: 80%;
-  /* border: 2px solid var(--first-bg); */
   border-radius: 20px;
+  font-size: 1.2em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -265,7 +265,7 @@ section h2 {
 .github-link {
   text-align: center;
   line-height: 30px;
-  border: 2px solid var(--links);
+  /* border: 2px solid var(--links); */
   border-radius: 20px;
   width: 200px;
   margin: 0 auto;
@@ -313,6 +313,7 @@ fieldset {
   background: var(--primary);
   color: var(--links);
   cursor: pointer;
+  border-radius: 20px;
 }
 .contact button:before {
   content: "Send";
