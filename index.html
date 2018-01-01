@@ -43,6 +43,7 @@
   <!-- stylesheets -->
   <link href="/assets/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -56,7 +57,7 @@
       <h1>Hi, I'm Alessio</h1>
       <p>I design and build modern web applications</p>
     </div>
-    <a href='#projects' class='scroll-arrow'>
+    <a href='#about' class='scroll-arrow'>
       <i class='fa fa-chevron-down'></i>
     </a>
     <!-- Navigation -->
@@ -68,11 +69,11 @@
         <a href="#header">
           <li>Home</li>
         </a>
-        <a href="#projects">
-          <li>Projects</li>
-        </a>
         <a href="#cv">
           <li>About</li>
+        </a>
+        <a href="#projects">
+          <li>Projects</li>
         </a>
         <a href="#contact">
           <li>Contact me</li>
@@ -95,6 +96,64 @@
       </div>
     </nav>
   </header>
+
+  <!-- About -->
+  <section class="cv" id="cv">
+    <div class="wrapper">
+      <h2>About</h2>
+      <div class='flex-container'>
+        <div class="bio">
+          <img src='/assets/selfxs.jpg' width='100%' alt='profile picture' />
+          <p>I’m a Melbourne based full stack developer who designs and implements modern and scalable solutions using the latest
+            tool and technologies.
+          </p>
+        </div>
+        <div class='hard-skills'>
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>
+              <i class="devicon-html5-plain"></i> Html5</li>
+            <li>
+              <i class="devicon-css3-plain"></i> Css3</li>
+            <li>
+              <i class="devicon-sass-original"></i> Sass/Scss</li>
+            <li>
+              <i class="devicon-javascript-plain"></i> Javascrips(Es6)</li>
+            <li>
+              <i class="devicon-ruby-plain"></i> Ruby</li>
+            <li>
+              <i class="devicon-rails-plain"></i> Rails</li>
+            <li>
+              <i class="devicon-nodejs-plain"></i> Node</li>
+            <li>
+              <i class="devicon-react-original"></i> React</li>
+            <li>
+              <i class="devicon-mongodb-plain-wordmark"></i> MongoDB</li>
+            <li>
+              <i class="devicon-git-plain"></i> Git</li>
+            <li>
+              <i class="devicon-trello-plain"></i> Trello</li>
+            <li>
+              <i class=""></i> Figma</li>
+          </ul>
+        </div>
+        <div class='soft-skills'>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Management</li>
+            <li>Leadership</li>
+            <li>Organization</li>
+            <li>Teamwork</li>
+            <li>Customer Service</li>
+            <li>Problem Solving</li>
+            <li>Creativity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Projects -->
 
   <section class="projects" id="projects">
@@ -111,11 +170,11 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/chefbasket">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>A two-sided marketplace to connect food businesses and suppliers</p>
         </div>
         <div class="item">
@@ -127,11 +186,11 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/instarails">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>A ruby on rails mockup of twitter</p>
         </div>
         <div class="item">
@@ -143,11 +202,11 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/rails_bnb">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>A ruby on rails mockup of airbnb</p>
         </div>
         <div class="item">
@@ -159,11 +218,11 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/my-Portfolio">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>My personal webpage</p>
         </div>
         <div class="item">
@@ -175,11 +234,11 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/wolf-of-react">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>A React app displaying data from a stock market API</p>
         </div>
         <div class="item">
@@ -191,76 +250,18 @@
               <div class='frame-overlay'></div>
             </div>
           </a>
-          <p class='github-link'>
+          <div class='github-link'>
             <a href="https://github.com/alessio-palumbo/nodeshop">
               <i class="devicon-github-plain"></i> View on Github
             </a>
-          </p>
+          </div>
           <p>A React app for online shopping</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="cv" id="cv">
-    <div class="wrapper">
-      <h2>About</h2>
-      <div class="container">
-        <button type="button">Bio</button>
-        <div class="content bio">
-          <img src='/assets/selfxs.jpg' width='100%' alt='profile picture' />
-          <p>I’m a Melbourne based full stack developer who designs and implements modern and scalable solutions using the latest
-            tool and technologies.
-          </p>
-        </div>
 
-
-        <button type="button">Skills</button>
-        <div class="content">
-          <h3>Web development Skills</h3>
-          <ul class="webdev">
-            <li>
-              <i class="devicon-html5-plain"></i> Html5</li>
-            <li>
-              <i class="devicon-css3-plain"></i> Css3</li>
-            <li>
-              <i class="devicon-javascript-plain"></i> Javascrips(Es6)</li>
-            <li>
-              <i class="devicon-ruby-plain"></i> Ruby</li>
-            <li>
-              <i class="devicon-rails-plain"></i> Rails</li>
-            <li>
-              <i class="devicon-nodejs-plain-wordmark"></i> Node</li>
-            <li>
-              <i class="devicon-react-original"></i> React</li>
-            <li>
-              <i class="devicon-mongodb-plain-wordmark"></i> MongoDB</li>
-            <li>
-              <i class="devicon-sass-original"></i> Sass</li>
-            <li>
-              <i class="devicon-git-plain"></i> Git</li>
-          </ul>
-          <br/>
-          <h3>Personal Skills</h3>
-          <ul class="personal">
-            <li>Management</li>
-            <li>Leadership</li>
-            <li>Organization</li>
-            <li>Teamwork</li>
-            <li>Customer Service</li>
-            <li>Problem Solving</li>
-            <li>Creativity</li>
-          </ul>
-        </div>
-
-        <a href="/assets/alessio-palumbo-cv.pdf" class="download" download>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          Download Pdf</a>
-
-      </div>
-    </div>
-  </section>
 
   <!-- Contact me -->
   <section class="contact" id="contact">
@@ -281,6 +282,7 @@
 
   <!-- Footer -->
   <footer>
+
     <div class="wrapper">
       <a href="https://github.com/alessio-palumbo" target="_blank">
         <i class="devicon-github-plain"></i>
@@ -295,6 +297,7 @@
         <i class="fa fa-twitter" aria-hidden="true"></i>
       </a>
     </div>
+    <p class='copyrights'>&copy;2017 Alessio Palumbo</p>
   </footer>
 
 </body>
