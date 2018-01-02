@@ -41,7 +41,9 @@ ul {
 
 /* header */
 header {
-  background: url("background.png") no-repeat var(--first-bg);
+  background-image: var(--first-bg);
+  background-image: url("background.png");
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
