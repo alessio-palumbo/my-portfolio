@@ -55,6 +55,7 @@ header {
   top: 50%;
   left:50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -363,7 +364,7 @@ footer a:hover {
     max-width: 1200px;
   }
   /* projects */
-  .projects .flex {
+  .flex {
     display: -webkit-box;     
     display: -moz-box;         
     display: -ms-flexbox;   
@@ -377,6 +378,10 @@ footer a:hover {
   }
   /* about */
   .flex-container {
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;   
+    display: -webkit-flex; 
     display: flex;
   }
   .hard-skills, .soft-skills, .bio {
