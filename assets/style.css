@@ -41,10 +41,13 @@ ul {
 
 /* header */
 header {
-  background-image: url("background.png"), url('http://d33wubrfki0l68.cloudfront.net/assets/11bedc960db5dd7e0b303f369d647645a624b11e/background.png'), white;
+  background-image: url("background.png"), url("http://d33wubrfki0l68.cloudfront.net/assets/11bedc960db5dd7e0b303f369d647645a624b11e/background.png"), white;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size:cover;
   background-size: cover;
 }
 .greeting {
