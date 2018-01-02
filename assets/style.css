@@ -373,6 +373,8 @@ footer a:hover {
     flex-wrap: wrap;
   }
   .item {
+    -webkit-flex: auto;       
+    -ms-flex: auto; 
     flex: auto;
     margin: 10px;
   }
